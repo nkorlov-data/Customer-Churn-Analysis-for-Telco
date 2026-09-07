@@ -45,13 +45,13 @@ Before building the classification models, I explored and cleaned the dataset to
 
 The analysis included:
 
-1. Checking for missing values and duplicate records
-2. Reviewing data types and unique values across categorical columns
-3. Dropping irrelevant columns
-4. Fixing data type and formatting issues
-5. Generating descriptive statistics
-6. Exploring relationships between variables
-7. Creating visualisations to identify patterns associated with churn
+1. Checking for missing values and duplicate records.
+2. Reviewing data types and unique values across categorical columns.
+3. Dropping irrelevant columns.
+4. Fixing data type and formatting issues.
+5. Generating descriptive statistics.
+6. Exploring relationships between variables.
+7. Creating visualisations to identify patterns associated with churn.
 
 ### Contract Type
 ![Churn by Contract type](https://github.com/nkorlov-data/Customer-Churn-Analysis-for-Telco/blob/main/images/churn_by_contract_type.png)
@@ -95,3 +95,11 @@ Classification Report:
    macro avg       0.73      0.76      0.74      1409
 weighted avg       0.80      0.77      0.78      1409
 ```
+## Business Insights & Recommendations
+**The analysis shows** that month-to-month contracts are associated with significantly higher churn than one- or two-year contracts, and that customers with shorter tenure and higher monthly charges are more likely to leave. Fiber optic customers churn more often than those with DSL or no internet service, and customers paying via Electronic check churn more than those using automatic payment methods. **In contrast**, demographic and add-on service features, such as gender or StreamingTV, have little influence on churn.
+### Potential Actions
+- Encourage month-to-month customers to switch to one- or two-year contracts through discounts or added-value offers.
+- Prioritize retention outreach for new customers during their first few months of tenure.
+- Review pricing or offer loyalty discounts for customers with high monthly charges.
+- Investigate service quality and customer satisfaction among Fiber optic users.
+- Encourage customers to switch from Electronic check to automatic payment methods.
