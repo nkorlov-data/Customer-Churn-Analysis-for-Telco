@@ -69,8 +69,8 @@ Customers **who churned tend to have higher monthly charges overall**, with the 
 Before training, the dataset was split into training and test sets, numerical features (tenure, MonthlyCharges, TotalCharges) were scaled using `StandardScaler`, and class imbalance in the training set was addressed using `SMOTE`, since churned customers made up a minority of the dataset. Both models were trained on the resampled training data and evaluated on the original, untouched test set to reflect real-world class distribution.
 ## Results
 ### Random Forest
-```
 Classification Report:
+```
               precision    recall  f1-score   support
 
            0       0.86      0.82      0.84      1027
@@ -80,9 +80,12 @@ Classification Report:
    macro avg       0.72      0.73      0.72      1409
 weighted avg       0.78      0.77      0.78      1409
 ```
+The Random Forest model identified `tenure`, `MonthlyCharges`, and `TotalCharges` as the three most important predictors of churn, followed by `Contract_Month-to-month` and `InternetService`.
+![Feature Importance](https://github.com/nkorlov-data/Customer-Churn-Analysis-for-Telco/blob/main/images/feature_importance.png)
+This aligns with the patterns observed in the exploratory analysis. Customers with shorter tenure, higher monthly charges, and month-to-month contracts are the most likely to churn. Demographic features such as `gender` and service add-ons like `StreamingTV` or `DeviceProtection` had comparatively little influence on the model's predictions.
 ### Logistic Regression
-```
 Classification Report:
+```
               precision    recall  f1-score   support
 
            0       0.89      0.78      0.83      1027
