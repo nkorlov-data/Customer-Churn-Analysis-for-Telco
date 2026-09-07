@@ -103,3 +103,31 @@ weighted avg       0.80      0.77      0.78      1409
 - Review pricing or offer loyalty discounts for customers with high monthly charges.
 - Investigate service quality and customer satisfaction among Fiber optic users.
 - Encourage customers to switch from Electronic check to automatic payment methods.
+## Built With
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Imbalanced-learn
+## How to Run the Project
+Clone the repository:
+```
+git clone https://github.com/nkorlov-data/Customer-Churn-Analysis-for-Telco.git
+```
+Navigate into the project folder:
+```
+cd Customer-Churn-Analysis-for-Telco
+```
+Install the required packages:
+```
+pip install -r requirements.txt
+```
+Run the notebook:
+```
+jupyter notebook Telco_Churn_Analysis.ipynb
+```
+## Future Improvements
+- Testing additional models to compare performance
+- Removing low-importance features (e.g. `gender`, `StreamingTV`, `DeviceProtection`) to simplify the model and potentially improve accuracy
