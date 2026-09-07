@@ -53,3 +53,15 @@ The analysis included:
 6. Exploring relationships between variables
 7. Creating visualisations to identify patterns associated with churn
 
+### Contract Type
+![Churn by Contract type](https://github.com/nkorlov-data/Customer-Churn-Analysis-for-Telco/blob/main/images/churn_by_contract_type.png)
+Customers on month-to-month contracts churn at a much higher rate than those on one- or two-year contracts. Long-term contracts appear to significantly reduce the likelihood of churn.
+### Internet Service Type
+![Churn by Internet Service type](https://github.com/nkorlov-data/Customer-Churn-Analysis-for-Telco/blob/main/images/churn_by_internet_service.png)
+Customers with Fiber optic internet churn considerably more often than those with DSL or no internet service, suggesting possible dissatisfaction with this service (e.g. pricing or service quality).
+###
+![Churn by Payment Method](https://github.com/nkorlov-data/Customer-Churn-Analysis-for-Telco/blob/main/images/churn_by_payment_method.png)
+Customers paying via Electronic check show a noticeably higher churn rate compared to those using automatic payment methods (bank transfer or credit card), which may reflect lower engagement or commitment to the service.
+###
+![KDE for MonthlyCharges](https://github.com/nkorlov-data/Customer-Churn-Analysis-for-Telco/blob/main/images/kde_monthly_charges.png)
+Customers who churned tend to have higher monthly charges overall, with the churned group showing a pronounced density peak between ~$80–$100, while retained customers are more concentrated in the lower charge range.
